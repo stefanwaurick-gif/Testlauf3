@@ -66,6 +66,21 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Interne Beziehungen:** Bestimmte Personal-Paarungen können positive oder negative Synergien entwickeln.
   - *Beispiel:* Ein Renningenieur und ein Fahrer, die sich gut verstehen, schalten einen kleinen Setup-Bonus frei. Ein Konflikt zwischen Technischem Direktor und Chef-Aerodynamiker verlangsamt die F&E.
 
+
+### 1.6. Spieler-Reputation
+**Status:** Nicht begonnen
+- **Reputations-Archetypen:** Die Handlungen des Spielers formen seine Reputation in eine von mehreren Richtungen.
+  - *Der Pragmatiker:* Bekannt für kosteneffiziente und clevere Geschäftsentscheidungen. Zieht Sponsoren an, die auf ein gutes Preis-Leistungs-Verhältnis achten.
+  - *Der Innovator:* Bekannt für riskante F&E und unkonventionelle Strategien. Steigert die Moral von risikofreudigem Personal, kann aber konservative Sponsoren abschrecken.
+  - *Der Fahrer-Flüsterer:* Bekannt für exzellentes Fahrermanagement und die Entwicklung von Talenten. Macht das Team für Top-Fahrer und junge Talente attraktiver.
+  - *Die Loyalitäts-Legende:* Bekannt für lange Vertragstreue mit Personal und Fahrern. Erhöht die Loyalität im gesamten Team und erleichtert Vertragsverlängerungen.
+- **Dynamische Auswirkungen:**
+  - Beeinflusst die Art und Konditionen von Sponsorenangeboten.
+  - Wirkt sich auf die Rekrutierung von Fahrern und Personal aus (bestimmte Charaktere werden von bestimmten Reputationen angezogen).
+  - Schaltet einzigartige Story-Events frei, die zum Ruf des Spielers passen.
+
+=======
+
 ## 2. Das Rennwochenende
 **Status:** In Bearbeitung
 
@@ -90,7 +105,12 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Live-Anpassung:* Die Strategie kann während des Rennens als Reaktion auf Ereignisse (z.B. Safety Car) geändert werden.
 - **Anweisungen während des Rennens:** Direkte Befehle an die Fahrer.
   - *Pace-Management:* `Reifen/Sprit schonen`, `Neutral fahren`, `Attackieren`. Beeinflusst Rundenzeit, Reifen- und Benzinverbrauch.
-  - *ERS-Management:* `Aufladen`, `Neutral`, `Überholen`. Steuert den Einsatz der elektrischen Energie.
+  - *ERS-Management:* Die Modi steuern den Einsatz der elektrischen Energie.
+    - *Modi:* `Aufladen`, `Neutral`, `Verteidigen`, `Überholen`, `Hotlap` (nur im Qualifying).
+  - *Team-Anweisungen:* Befehle, die das Zusammenspiel der Fahrer regeln.
+    - `Position halten:` Weist die Fahrer an, sich nicht gegenseitig anzugreifen.
+    - `Platztausch anordnen:` Weist einen Fahrer an, den Teamkollegen vorbeizulassen (riskant für die Moral).
+    - `Teamkollegen helfen (DRS):` Weist einen Fahrer an, dem Teamkollegen ins DRS-Fenster zu helfen.
 - **Dynamisches Wetter:** Das Wetter spielt eine entscheidende Rolle.
   - *Vorhersage-Genauigkeit:* Die Wettervorhersage hat eine prozentuale Sicherheit, was strategische Risiken schafft.
 
@@ -99,6 +119,11 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 
 ### 3.1. Karriere-Modus
 **Status:** In Bearbeitung
+
+- **Team erstellen:** Starte mit einem komplett neuen Team von Grund auf.
+- **Bestehendes Team übernehmen:** Übernimm die Leitung eines etablierten Teams und führe es zum Erfolg.
+- **Langzeit-Motivation:** Aufstieg durch verschiedene Rennserien.
+=======
 - **Team erstellen:** Der Spieler gründet sein eigenes Team von Grund auf.
   - *Anpassung:* Wahl von Teamname, Hauptfarbe und Logo (aus einer vordefinierten Liste).
   - *Startbedingungen:* Ein fixes Startbudget, alle Einrichtungen auf Stufe 1, ein Basis-Auto und Zugang zu einem Pool von Nachwuchsfahrern und -personal.
@@ -108,6 +133,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Langzeit-Motivation:** Das ultimative Ziel ist der Gewinn der Weltmeisterschaft.
   - *Team-Prestige:* Eine neue Kennzahl, die durch Erfolge steigt. Höheres Prestige schaltet bessere Sponsoren und Personal frei und steigert die Moral.
 
+
 ### 3.2. Multiplayer
 **Status:** Nicht begonnen
 - **Online-Ligen:** Erstelle oder trete Ligen mit Freunden bei und fahre eine komplette Saison.
@@ -115,6 +141,8 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Koop-Karriere:** Zwei Spieler leiten gemeinsam ein Team und teilen sich die Verantwortlichkeiten (z.B. einer für F&E/Finanzen, der andere für das Rennwochenende).
 
 ## 4. Sonstiges
+
+=======
 
 **Status:** In Überarbeitung
 
@@ -125,6 +153,28 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Vertragsbindung:** Nachwuchsfahrer unterzeichnen Optionsverträge. Der Spieler kann sie zum Testfahrer befördern oder ihnen ein Stammcockpit anbieten, wenn sie bereit sind.
 
 ### 4.2. Team-Rivalitäten
+
+**Status:** Nicht begonnen
+- **Dynamisches System:** Basierend auf der Performance und direkten Duellen auf der Strecke entstehen Rivalitäten mit anderen Teams.
+- **Auswirkungen:** Erhöht die Medienaufmerksamkeit, schafft spezielle Sponsoren-Boni (z.B. "Schlage Team X in den nächsten 3 Rennen") und beeinflusst die Moral.
+
+### 4.3. Dynamische Story-Events
+**Status:** Nicht begonnen
+- **Szenario-basiert:** Zufällige oder getriggerte Ereignisse, die den Spieler vor Entscheidungen stellen.
+  - *Beispiele:* Ein reicher Investor bietet an, das Team zu kaufen; der Hauptsponsor droht mit Rückzug nach einer Pechsträhne; ein wichtiger Ingenieur erhält ein Angebot von einem Konkurrenzteam.
+- **Entscheidungsfreiheit:** Die Wahl des Spielers hat kurz- und langfristige Konsequenzen für Finanzen, Moral und Teamleistung.
+
+### 4.4. Medien & Presse
+**Status:** Detailliert
+- **Interaktive Interviews:** Nach dem Rennen wird der Spieler mit Fragen von Journalisten konfrontiert.
+  - *Antwort-Optionen:* Die Antworten können die Moral der Fahrer (loben/kritisieren), des Personals oder die Beziehung zu Sponsoren und Rivalen beeinflussen.
+- **Presse-Stimmung:** Die Medien entwickeln eine allgemeine Haltung gegenüber dem Team (z.B. "Aufsteiger", "Kriselnd"), die sich auf das Team-Prestige auswirkt.
+
+### 4.5. Customization
+**Status:** Nicht begonnen
+- **Team-Editor:** Werkzeuge zur Gestaltung der Fahrzeuglackierung, des Team-Logos und der Team-Kleidung.
+- **Fahrer-Editor:** Anpassung von Helm-Design und Rennanzug für die eigenen Fahrer.
+=======
 **Status:** Nicht begonnen
 - **Dynamisches System:** Basierend auf der Performance und direkten Duellen auf der Strecke entstehen Rivalitäten mit anderen Teams.
 - **Auswirkungen:** Erhöht die Medienaufmerksamkeit, schafft spezielle Sponsoren-Boni (z.B. "Schlage Team X in den nächsten 3 Rennen") und beeinflusst die Moral.
