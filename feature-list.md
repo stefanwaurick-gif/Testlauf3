@@ -57,15 +57,21 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
     - *Stufe 1:* Standard. *Stufe 2:* Deckt "Potenzial"-Rating auf. *Stufe 3:* Deckt verborgene Fahrer-Eigenschaften auf.
 
 ## 2. Das Rennwochenende
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 
 ### 2.1. Simulation
 **Status:** Nicht begonnen
-- **3D-Rennansicht:** Verfolgen des Rennens in einer ansprechenden 3D-Grafik.
-- **Daten-Dashboard:** Detaillierte Telemetriedaten, Rundenzeiten und Renninformationen in Echtzeit.
+- **Ansichts-Modi:** Verschiedene Perspektiven zur Beobachtung des Rennens.
+  - *TV-Kamera:* Dynamische Kameras entlang der Strecke wie bei einer Fernsehübertragung.
+  - *Onboard-Kamera:* Mitfahren aus der Perspektive eines beliebigen Fahrers.
+  - *2D-Kartenansicht:* Taktische Übersicht aller Fahrzeuge auf der Strecke in Echtzeit.
+- **Daten-Dashboard (HUD):** Anpassbare Widgets mit allen wichtigen Informationen.
+  - *Live-Zeitnahme:* Klassischer Zeitenturm mit Positionen, Fahrernamen, Abständen und Rundenzeiten.
+  - *Zustandsanzeigen (Spieler):* Detaillierte Anzeige für die eigenen Fahrer: Reifenzustand (%), Benzinmenge (in Runden), ERS-Ladung (%), aktuelle Pace/ERS-Modi.
+  - *Wetter-Radar:* Eine Mini-Karte, die herannahenden Regen und dessen Intensität anzeigt.
 
 ### 2.2. Strategie
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 - **Setup-Abstimmung:** Anpassen des Fahrzeug-Setups während der Trainings.
   - *Parameter:* Flügel-Einstellung (Aero-Balance), Reifendruck (Grip vs. Verschleiß), Bremsbalance.
   - *Fahrer-Feedback:* Der Fahrer gibt qualitatives Feedback (z.B. "Übersteuern am Kurveneingang"), das dem Spieler hilft, das Setup zu optimieren.
