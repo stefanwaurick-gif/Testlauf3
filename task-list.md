@@ -128,7 +128,3 @@ Dieses Dokument dient der Zuweisung und Nachverfolgung von Entwicklungsaufgaben.
 | **A-003** | Done | 4.1. Fahrerakademie | KI-Logik für Abwerbung von Talenten | **Maria** | Implementiere eine jährliche Logik, bei der KI-Teams versuchen, die besten Absolventen von Fahrerakademien (inkl. der des Spielers) abzuwerben, basierend auf Team-Prestige. |
 =======
 | **A-003** | To Do | 4.1. Fahrerakademie | KI-Logik für Abwerbung von Talenten | **Maria** | Implementiere eine jährliche Logik, bei der KI-Teams versuchen, die besten Absolventen von Fahrerakademien (inkl. der des Spielers) abzuwerben, basierend auf Team-Prestige. |
-
-
-
-

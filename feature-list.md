@@ -285,5 +285,3 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 ### 4.3. Customization
 **Status:** Nicht begonnen
 - Gestaltung der Team-Lackierung und Fahrerhelme.
-
-
