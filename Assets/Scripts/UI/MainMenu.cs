@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     [Header("UI Buttons")]
     [SerializeField] private Button startCareerButton;
     [SerializeField] private Button loadGameButton;
+    [SerializeField] private Button saveGameButton; // Added for testing
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button exitButton;
 
@@ -18,10 +19,11 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         // Here you would add listeners to the buttons, for example:
-        // startCareerButton.onClick.AddListener(StartCareer);
-        // loadGameButton.onClick.AddListener(LoadGame);
-        // settingsButton.onClick.AddListener(OpenSettings);
-        // exitButton.onClick.AddListener(ExitGame);
+        startCareerButton.onClick.AddListener(StartCareer);
+        loadGameButton.onClick.AddListener(LoadGame);
+        saveGameButton.onClick.AddListener(SaveGame); // Added for testing
+        settingsButton.onClick.AddListener(OpenSettings);
+        exitButton.onClick.AddListener(ExitGame);
 
         Debug.Log("MainMenu script started. UI elements should be linked.");
     }
@@ -34,10 +36,24 @@ public class MainMenu : MonoBehaviour
         // SceneManager.LoadScene("CareerModeScene"); // Example of what would go here
     }
 
-    private void LoadGame()
+    private async void SaveGame()
+    {
+        Debug.Log("Save Game button clicked!");
+        // Create a new GameState with a large amount of test data
+        GameState state = new GameState(true);
+        await SaveManager.Instance.SaveGameState(state);
+        Debug.Log("Async save operation complete.");
+    }
+
+    private async void LoadGame()
     {
         Debug.Log("Load Game button clicked!");
-        // Code to load a saved game state would go here.
+        GameState state = await SaveManager.Instance.LoadGameState();
+        if (state != null)
+        {
+            Debug.Log($"Loaded Team: {state.TeamName}, Budget: {state.Budget}, History Entries: {state.CareerHistory.Count}");
+        }
+        Debug.Log("Async load operation complete.");
     }
 
     private void OpenSettings()
