@@ -18,6 +18,10 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Klauseln:* Grundgehalt, Laufzeit, Ausstiegsklauseln, Leistungsboni (Siege, Podien, WM-Titel), Loyalitätsboni.
 - **Personalentwicklung:** Gezielte Verbesserung der Personal-Skills.
   - *Methoden:* Investition in Mentoring-Programme, Simulatortraining oder externe Kurse zur Steigerung spezifischer Skill-Werte.
+- **Fahrer-Eigenschaften (Traits):** Jeder Fahrer hat 1-3 einzigartige Eigenschaften, die das Gameplay beeinflussen.
+  - *Status:* Nicht begonnen
+  - *Mechanik:* Traits können positiv (z.B. "Regenmeister", "Reifenflüsterer") oder negativ (z.B. "Hitzkopf", "Inkonsistent") sein und beeinflussen die Performance unter bestimmten Bedingungen oder die Abnutzung des Materials.
+  - *Entdeckung:* Traits werden durch Scouting oder durch das Verhalten des Fahrers im Laufe der Zeit aufgedeckt.
 
 ### 1.2. Fahrzeugentwicklung (R&D)
 **Status:** In Bearbeitung
@@ -37,6 +41,10 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Experimentelle Projekte:** Einmal pro Saison kann ein hochriskantes Projekt gestartet werden.
   - *Mechanik:* Erfordert hohe Investitionen (Geld, Personal) für eine Chance auf einen einzigartigen Durchbruch.
   - *Mögliche Ergebnisse:* Spektakulärer, saisonübergreifender Vorteil; kostspieliger Fehlschlag mit Moralverlust; unerwartete, aber nützliche Nebeneffekte.
+- **Saisonvorbereitung (F&E-Fokus):** Am Ende jeder Saison kann der Spieler einen F&E-Fokus für das Auto des nächsten Jahres festlegen.
+  - *Status:* Nicht begonnen
+  - *Mechanik:* Gewährt einen anfänglichen Bonus auf ein bestimmtes Bauteil oder einen Aspekt des Autos zu Beginn der neuen Saison, geht aber zu Lasten anderer Bereiche.
+  - *Fokus-Optionen:* Aero-Konzept, Mechanischer Grip, Zuverlässigkeit, Allrounder.
 
 ### 1.3. Finanzmanagement
 **Status:** In Bearbeitung
@@ -74,7 +82,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Beispiel:* Ein Renningenieur und ein Fahrer, die sich gut verstehen, schalten einen kleinen Setup-Bonus frei. Ein Konflikt zwischen Technischem Direktor und Chef-Aerodynamiker verlangsamt die F&E.
 
 ### 1.6. Spieler-Reputation
-**Status:** Nicht begonnen
+**Status:** Fortgeschritten
 - **Reputations-Archetypen:** Die Handlungen des Spielers formen seine Reputation in eine von mehreren Richtungen.
   - *Der Pragmatiker:* Bekannt für kosteneffiziente und clevere Geschäftsentscheidungen. Zieht Sponsoren an, die auf ein gutes Preis-Leistungs-Verhältnis achten.
   - *Der Innovator:* Bekannt für riskante F&E und unkonventionelle Strategien. Steigert die Moral von risikofreudigem Personal, kann aber konservative Sponsoren abschrecken.
@@ -100,7 +108,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Wetter-Radar:* Eine Mini-Karte, die herannahenden Regen und dessen Intensität anzeigt.
 
 ### 2.2. Strategie
-**Status:** Fortgeschritten
+**Status:** Abgeschlossen
 - **Setup-Abstimmung:** Anpassen des Fahrzeug-Setups während der Trainings.
   - *Parameter:* Flügel-Einstellung (Aero-Balance), Reifendruck (Grip vs. Verschleiß), Bremsbalance.
   - *Fahrer-Feedback:* Der Fahrer gibt qualitatives Feedback (z.B. "Übersteuern am Kurveneingang"), das dem Spieler hilft, das Setup zu optimieren.
@@ -117,6 +125,16 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
     - `Teamkollegen helfen (DRS):` Weist einen Fahrer an, dem Teamkollegen ins DRS-Fenster zu helfen.
 - **Dynamisches Wetter:** Das Wetter spielt eine entscheidende Rolle.
   - *Vorhersage-Genauigkeit:* Die Wettervorhersage hat eine prozentuale Sicherheit, was strategische Risiken schafft.
+
+### 2.3. Strecken-Charakteristiken
+**Status:** Nicht begonnen
+- **Mechanik:** Jede Strecke im Kalender hat 1-2 definierte Charakteristiken, die die Fahrzeug-Performance und Strategie beeinflussen.
+- **Beispiele:**
+  - *Power-Strecke (z.B. Monza):* Motorleistung ist der entscheidende Faktor.
+  - *Abtriebs-Strecke (z.B. Monaco):* Aerodynamik-Effizienz ist entscheidend.
+  - *Hoher Reifenverschleiß (z.B. Bahrain):* Zwingt zu reifenschonender Fahrweise oder zusätzlichen Boxenstopps.
+  - *Höhenlage (z.B. Mexiko):* Reduziert die Motorleistung und beeinflusst die Kühlung.
+  - *Bodenwellen (z.B. Austin):* Erfordert eine weichere Aufhängung, was die Aero-Performance beeinträchtigen kann.
 
 ## 3. Spielmodi
 **Status:** In Bearbeitung
