@@ -22,9 +22,13 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Status:* Nicht begonnen
   - *Mechanik:* Traits können positiv (z.B. "Regenmeister", "Reifenflüsterer") oder negativ (z.B. "Hitzkopf", "Inkonsistent") sein und beeinflussen die Performance unter bestimmten Bedingungen oder die Abnutzung des Materials.
   - *Entdeckung:* Traits werden durch Scouting oder durch das Verhalten des Fahrers im Laufe der Zeit aufgedeckt.
+- **Vorstands-Ziele:** Der Vorstand des Teams gibt dem Spieler Ziele vor.
+  - *Status:* Nicht begonnen
+  - *Mechanik:* Der Vorstand setzt kurz- (1 Jahr), mittel- (3 Jahre) und langfristige (5 Jahre) Ziele in den Bereichen Sport, Finanzen und Management.
+  - *Auswirkungen:* Das Erreichen der Ziele steigert das Vertrauen des Vorstands, was zu mehr Budget und Freiheiten führt. Das Verfehlen senkt das Vertrauen und kann zur Kündigung führen (Game Over).
 
 ### 1.2. Fahrzeugentwicklung (R&D)
-**Status:** In Bearbeitung
+**Status:** Fortgeschritten
 - **F&E-Projekte:** Spieler initiieren Projekte zur Entwicklung spezifischer Fahrzeugteile.
   - *Parameter:* Jedes Projekt hat definierte Kosten, eine Dauer (in Tagen) und benötigt Ingenieursstunden.
   - *Erfolg & Durchbrüche:* Der Erfolg wird durch die Fähigkeiten des Personals (z.B. Chef-Aerodynamiker) und die Stufe der Infrastruktur (z.B. Windkanal) beeinflusst. Es besteht die Chance auf einen "Durchbruch", der zu einem unerwartet großen Leistungsgewinn führt.
@@ -38,7 +42,6 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Regel-Grauzonen & Risiko:** Der Spieler kann riskante, potenziell nicht regelkonforme Teile entwickeln.
   - *Mechanik:* Diese Teile bieten einen hohen Leistungsschub, bergen aber das Risiko, bei einer technischen Inspektion nach dem Rennen entdeckt zu werden.
   - *Konsequenzen:* Strafen können von einer Geldstrafe über eine Disqualifikation vom Rennen bis hin zu einem Forschungsverbot für die Komponente reichen.
-
 - **Experimentelle Projekte:** Einmal pro Saison kann ein hochriskantes Projekt gestartet werden.
   - *Mechanik:* Erfordert hohe Investitionen (Geld, Personal) für eine Chance auf einen einzigartigen Durchbruch.
   - *Mögliche Ergebnisse:* Spektakulärer, saisonübergreifender Vorteil; kostspieliger Fehlschlag mit Moralverlust; unerwartete, aber nützliche Nebeneffekte.
@@ -46,11 +49,9 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Status:* Nicht begonnen
   - *Mechanik:* Gewährt einen anfänglichen Bonus auf ein bestimmtes Bauteil oder einen Aspekt des Autos zu Beginn der neuen Saison, geht aber zu Lasten anderer Bereiche.
   - *Fokus-Optionen:* Aero-Konzept, Mechanischer Grip, Zuverlässigkeit, Allrounder.
-=======
-
 
 ### 1.3. Finanzmanagement
-**Status:** In Bearbeitung
+**Status:** Fortgeschritten
 - **Sponsorenverträge:** Aushandeln von Verträgen mit verschiedenen Sponsoren.
   - *Sponsoren-Typen:* Hauptsponsor (1 pro Saison, hoher Wert, hohe Anforderungen) und Nebensponsoren (mehrere möglich, geringerer Wert).
   - *Vertrags-Struktur:* Fixe Zahlung pro Rennen, Leistungsboni (für Punkte, Podien, Siege) und Saisonziele (z.B. Konstrukteurs-WM Platz 5).
@@ -69,11 +70,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** In Bearbeitung
 - **Ausbaubare Einrichtungen:** Jede Einrichtung kann in mehreren Stufen ausgebaut werden. Jede Stufe kostet Zeit und Geld, schaltet aber Boni frei.
   - **Fabrik:** Beeinflusst Fertigungsgeschwindigkeit, -kapazität und Haltbarkeit der Teile.
-
-    -
-=======
     - *Stufe 1:* Standard. *Stufe 2:* +1 Fertigungs-Slot, +5% Haltbarkeit. *Stufe 3:* +2 Fertigungs-Slots, +10% Haltbarkeit.
-
   - **Windkanal:** Verbessert die Effektivität der Aerodynamik-Forschung.
     - *Stufe 1:* Standard. *Stufe 2:* +10% Forschungs-Effizienz für Aero. *Stufe 3:* +25% Forschungs-Effizienz, schaltet "intensive Simulation" frei.
   - **Fahrsimulator:** Verbessert die Fähigkeiten der Fahrer und liefert Setup-Daten.
@@ -82,24 +79,14 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
     - *Stufe 1:* Standard. *Stufe 2:* Deckt "Potenzial"-Rating auf. *Stufe 3:* Deckt verborgene Fahrer-Eigenschaften auf.
 
 ### 1.5. Personal-Moral und Beziehungen
-
 **Status:** In Bearbeitung
-=======
-**Status:** Nicht begonnen
-
 - **Moral-System:** Jeder Mitarbeiter hat einen Moral-Wert (1-100), der seine Leistung beeinflusst.
   - *Einflussfaktoren:* Teamerfolg, persönliche Gespräche, Gehalt, Gefühl der Wertschätzung. Niedrige Moral kann zu Leistungsabfall oder Kündigungswünschen führen.
 - **Interne Beziehungen:** Bestimmte Personal-Paarungen können positive oder negative Synergien entwickeln.
   - *Beispiel:* Ein Renningenieur und ein Fahrer, die sich gut verstehen, schalten einen kleinen Setup-Bonus frei. Ein Konflikt zwischen Technischem Direktor und Chef-Aerodynamiker verlangsamt die F&E.
 
-
 ### 1.6. Spieler-Reputation
 **Status:** Fortgeschritten
-=======
-
-### 1.6. Spieler-Reputation
-**Status:** Nicht begonnen
-
 - **Reputations-Archetypen:** Die Handlungen des Spielers formen seine Reputation in eine von mehreren Richtungen.
   - *Der Pragmatiker:* Bekannt für kosteneffiziente und clevere Geschäftsentscheidungen. Zieht Sponsoren an, die auf ein gutes Preis-Leistungs-Verhältnis achten.
   - *Der Innovator:* Bekannt für riskante F&E und unkonventionelle Strategien. Steigert die Moral von risikofreudigem Personal, kann aber konservative Sponsoren abschrecken.
@@ -109,11 +96,6 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - Beeinflusst die Art und Konditionen von Sponsorenangeboten.
   - Wirkt sich auf die Rekrutierung von Fahrern und Personal aus (bestimmte Charaktere werden von bestimmten Reputationen angezogen).
   - Schaltet einzigartige Story-Events frei, die zum Ruf des Spielers passen.
-
-
-=======
-=======
-
 
 ## 2. Das Rennwochenende
 **Status:** In Bearbeitung
@@ -148,7 +130,6 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Dynamisches Wetter:** Das Wetter spielt eine entscheidende Rolle.
   - *Vorhersage-Genauigkeit:* Die Wettervorhersage hat eine prozentuale Sicherheit, was strategische Risiken schafft.
 
-
 ### 2.3. Strecken-Charakteristiken
 **Status:** Nicht begonnen
 - **Mechanik:** Jede Strecke im Kalender hat 1-2 definierte Charakteristiken, die die Fahrzeug-Performance und Strategie beeinflussen.
@@ -159,29 +140,15 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Höhenlage (z.B. Mexiko):* Reduziert die Motorleistung und beeinflusst die Kühlung.
   - *Bodenwellen (z.B. Austin):* Erfordert eine weichere Aufhängung, was die Aero-Performance beeinträchtigen kann.
 
-=======
-
 ## 3. Spielmodi
 **Status:** In Bearbeitung
 
 ### 3.1. Karriere-Modus
 **Status:** In Bearbeitung
-
-=======
-
 - **Team erstellen:** Starte mit einem komplett neuen Team von Grund auf.
 - **Bestehendes Team übernehmen:** Übernimm die Leitung eines etablierten Teams und führe es zum Erfolg.
 - **Langzeit-Motivation:** Aufstieg durch verschiedene Rennserien.
-=======
-- **Team erstellen:** Der Spieler gründet sein eigenes Team von Grund auf.
-  - *Anpassung:* Wahl von Teamname, Hauptfarbe und Logo (aus einer vordefinierten Liste).
-  - *Startbedingungen:* Ein fixes Startbudget, alle Einrichtungen auf Stufe 1, ein Basis-Auto und Zugang zu einem Pool von Nachwuchsfahrern und -personal.
-- **Saisonablauf:** Das Spiel schreitet in einem Kalendersystem voran.
-  - *Kalender-Ansicht:* Zeigt eine Abfolge von Rennwochenenden und "HQ-Phasen".
-  - *HQ-Phasen:* Zeit zwischen den Rennen für Management-Tätigkeiten (F&E, Fertigung, Personal, Finanzen, Infrastruktur-Ausbau).
-- **Langzeit-Motivation:** Das ultimative Ziel ist der Gewinn der Weltmeisterschaft.
-  - *Team-Prestige:* Eine neue Kennzahl, die durch Erfolge steigt. Höheres Prestige schaltet bessere Sponsoren und Personal frei und steigert die Moral.
-
+- **Szenario-Modus:** Starte das Spiel in einer vordefinierten, herausfordernden Situation (z.B. Team mit Finanzproblemen, Star-Fahrer mit Motivationskrise).
 
 ### 3.2. Multiplayer
 **Status:** Nicht begonnen
@@ -189,13 +156,11 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Head-to-Head:** Fordere andere Spieler zu einzelnen Rennen heraus.
 - **Koop-Karriere:** Zwei Spieler leiten gemeinsam ein Team und teilen sich die Verantwortlichkeiten (z.B. einer für F&E/Finanzen, der andere für das Rennwochenende).
 
+### 3.3. Einstellungen & Schwierigkeit
+**Status:** Nicht begonnen
+- **Benutzerdefinierte Schwierigkeit:** Erlaube dem Spieler, einzelne Parameter wie KI-Stärke, Einnahmen-Multiplikator und F&E-Kosten individuell anzupassen.
+
 ## 4. Sonstiges
-
-=======
-
-=======
-
-
 **Status:** In Überarbeitung
 
 ### 4.1. Fahrerakademie
@@ -205,7 +170,6 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Vertragsbindung:** Nachwuchsfahrer unterzeichnen Optionsverträge. Der Spieler kann sie zum Testfahrer befördern oder ihnen ein Stammcockpit anbieten, wenn sie bereit sind.
 
 ### 4.2. Team-Rivalitäten
-
 **Status:** Nicht begonnen
 - **Dynamisches System:** Basierend auf der Performance und direkten Duellen auf der Strecke entstehen Rivalitäten mit anderen Teams.
 - **Auswirkungen:** Erhöht die Medienaufmerksamkeit, schafft spezielle Sponsoren-Boni (z.B. "Schlage Team X in den nächsten 3 Rennen") und beeinflusst die Moral.
@@ -226,62 +190,18 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** Nicht begonnen
 - **Team-Editor:** Werkzeuge zur Gestaltung der Fahrzeuglackierung, des Team-Logos und der Team-Kleidung.
 - **Fahrer-Editor:** Anpassung von Helm-Design und Rennanzug für die eigenen Fahrer.
-=======
 
+## 5. Karriere-Statistiken & Ruhmeshalle
 **Status:** Nicht begonnen
-- **Dynamisches System:** Basierend auf der Performance und direkten Duellen auf der Strecke entstehen Rivalitäten mit anderen Teams.
-- **Auswirkungen:** Erhöht die Medienaufmerksamkeit, schafft spezielle Sponsoren-Boni (z.B. "Schlage Team X in den nächsten 3 Rennen") und beeinflusst die Moral.
 
-### 4.3. Dynamische Story-Events
-**Status:** Nicht begonnen
-- **Szenario-basiert:** Zufällige oder getriggerte Ereignisse, die den Spieler vor Entscheidungen stellen.
-  - *Beispiele:* Ein reicher Investor bietet an, das Team zu kaufen; der Hauptsponsor droht mit Rückzug nach einer Pechsträhne; ein wichtiger Ingenieur erhält ein Angebot von einem Konkurrenzteam.
-- **Entscheidungsfreiheit:** Die Wahl des Spielers hat kurz- und langfristige Konsequenzen für Finanzen, Moral und Teamleistung.
+### 5.1. Karriere-Übersicht
+- **Spieler-Statistiken:** Detaillierte Auflistung der Erfolge des Spielers (gewonnene Rennen, Titel, gemanagte Teams etc.).
+- **Fahrer-Datenbank:** Jeder Fahrer im Spiel hat eine Karriereseite mit seinen bisherigen Saisonergebnissen, Teams und Erfolgen.
+- **Team-Datenbank:** Jedes Team hat eine historische Übersicht seiner Erfolge und früheren Fahrer.
 
-### 4.4. Medien & Presse
-**Status:** Detailliert
-- **Interaktive Interviews:** Nach dem Rennen wird der Spieler mit Fragen von Journalisten konfrontiert.
-  - *Antwort-Optionen:* Die Antworten können die Moral der Fahrer (loben/kritisieren), des Personals oder die Beziehung zu Sponsoren und Rivalen beeinflussen.
-- **Presse-Stimmung:** Die Medien entwickeln eine allgemeine Haltung gegenüber dem Team (z.B. "Aufsteiger", "Kriselnd"), die sich auf das Team-Prestige auswirkt.
+### 5.2. Ruhmeshalle (Hall of Fame)
+- **Ewige Ranglisten:** Ranglisten für Fahrer und Teams nach Siegen, Pole Positions und Weltmeistertiteln.
+- **Besondere Meilensteine:** Kennzeichnung von besonderen Erfolgen (z.B. "Triple Crown", "Eine ganze Saison ungeschlagen").
 
-### 4.5. Customization
-**Status:** Nicht begonnen
-- **Team-Editor:** Werkzeuge zur Gestaltung der Fahrzeuglackierung, des Team-Logos und der Team-Kleidung.
-- **Fahrer-Editor:** Anpassung von Helm-Design und Rennanzug für die eigenen Fahrer.
-=======
-**Status:** Nicht begonnen
-- **Dynamisches System:** Basierend auf der Performance und direkten Duellen auf der Strecke entstehen Rivalitäten mit anderen Teams.
-- **Auswirkungen:** Erhöht die Medienaufmerksamkeit, schafft spezielle Sponsoren-Boni (z.B. "Schlage Team X in den nächsten 3 Rennen") und beeinflusst die Moral.
-
-### 4.3. Dynamische Story-Events
-**Status:** Nicht begonnen
-- **Szenario-basiert:** Zufällige oder getriggerte Ereignisse, die den Spieler vor Entscheidungen stellen.
-  - *Beispiele:* Ein reicher Investor bietet an, das Team zu kaufen; der Hauptsponsor droht mit Rückzug nach einer Pechsträhne; ein wichtiger Ingenieur erhält ein Angebot von einem Konkurrenzteam.
-- **Entscheidungsfreiheit:** Die Wahl des Spielers hat kurz- und langfristige Konsequenzen für Finanzen, Moral und Teamleistung.
-
-### 4.4. Medien & Presse
-**Status:** Detailliert
-- **Interaktive Interviews:** Nach dem Rennen wird der Spieler mit Fragen von Journalisten konfrontiert.
-  - *Antwort-Optionen:* Die Antworten können die Moral der Fahrer (loben/kritisieren), des Personals oder die Beziehung zu Sponsoren und Rivalen beeinflussen.
-- **Presse-Stimmung:** Die Medien entwickeln eine allgemeine Haltung gegenüber dem Team (z.B. "Aufsteiger", "Kriselnd"), die sich auf das Team-Prestige auswirkt.
-
-### 4.5. Customization
-**Status:** Nicht begonnen
-- **Team-Editor:** Werkzeuge zur Gestaltung der Fahrzeuglackierung, des Team-Logos und der Team-Kleidung.
-- **Fahrer-Editor:** Anpassung von Helm-Design und Rennanzug für die eigenen Fahrer.
-=======
-**Status:** In Bearbeitung
-
-### 4.1. Fahrerakademie
-**Status:** Nicht begonnen
-- **Talente scouten:** Spieler können Scouts beauftragen, eine Liste von jungen Talenten (15-17 Jahre) zu erstellen. Die Genauigkeit der sichtbaren Werte und des Potenzials hängt von der Stufe der Scouting-Abteilung ab.
-- **Entwicklungsfokus:** Jedem Nachwuchsfahrer kann ein Trainingsfokus zugewiesen werden (z.B. "Pace", "Konstanz", "Reifenschonung"), um gezielt Attribute zu verbessern. Die Effektivität wird durch die Simulator-Stufe beeinflusst.
-- **Abschluss und Beförderung:** Mit 18 Jahren verlassen Fahrer die Akademie. Der Spieler hat ein exklusives Zeitfenster, um ihnen einen Vertrag als Stamm- oder Reservefahrer anzubieten. Danach können auch KI-Teams Angebote machen.
-
-### 4.2. Medien & Presse
-**Status:** Nicht begonnen
-- Interaktion mit den Medien, die sich auf die Moral des Teams und der Fahrer auswirkt.
-
-### 4.3. Customization
-**Status:** Nicht begonnen
-- Gestaltung der Team-Lackierung und Fahrerhelme.
+### 5.3. Saison-Archiv
+- **Vergangene Saisons:** Der Spieler kann die detaillierten Endergebnisse (Fahrer- & Konstrukteurswertung) jeder gespielten Saison einsehen.
