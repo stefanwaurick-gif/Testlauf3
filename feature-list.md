@@ -60,7 +60,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** In Bearbeitung
 
 ### 2.1. Simulation
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 - **Ansichts-Modi:** Verschiedene Perspektiven zur Beobachtung des Rennens.
   - *TV-Kamera:* Dynamische Kameras entlang der Strecke wie bei einer Fernsehübertragung.
   - *Onboard-Kamera:* Mitfahren aus der Perspektive eines beliebigen Fahrers.
@@ -85,13 +85,18 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Vorhersage-Genauigkeit:* Die Wettervorhersage hat eine prozentuale Sicherheit, was strategische Risiken schafft.
 
 ## 3. Spielmodi
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 
 ### 3.1. Karriere-Modus
 **Status:** Nicht begonnen
-- **Team erstellen:** Starte mit einem komplett neuen Team von Grund auf.
-- **Bestehendes Team übernehmen:** Übernimm die Leitung eines etablierten Teams und führe es zum Erfolg.
-- **Langzeit-Motivation:** Aufstieg durch verschiedene Rennserien.
+- **Team erstellen:** Der Spieler gründet sein eigenes Team von Grund auf.
+  - *Anpassung:* Wahl von Teamname, Hauptfarbe und Logo (aus einer vordefinierten Liste).
+  - *Startbedingungen:* Ein fixes Startbudget, alle Einrichtungen auf Stufe 1, ein Basis-Auto und Zugang zu einem Pool von Nachwuchsfahrern und -personal.
+- **Saisonablauf:** Das Spiel schreitet in einem Kalendersystem voran.
+  - *Kalender-Ansicht:* Zeigt eine Abfolge von Rennwochenenden und "HQ-Phasen".
+  - *HQ-Phasen:* Zeit zwischen den Rennen für Management-Tätigkeiten (F&E, Fertigung, Personal, Finanzen, Infrastruktur-Ausbau).
+- **Langzeit-Motivation:** Das ultimative Ziel ist der Gewinn der Weltmeisterschaft.
+  - *Team-Prestige:* Eine neue Kennzahl, die durch Erfolge steigt. Höheres Prestige schaltet bessere Sponsoren und Personal frei und steigert die Moral.
 
 ### 3.2. Multiplayer
 **Status:** Nicht begonnen
