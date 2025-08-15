@@ -28,7 +28,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Auswirkungen:* Das Erreichen der Ziele steigert das Vertrauen des Vorstands, was zu mehr Budget und Freiheiten führt. Das Verfehlen senkt das Vertrauen und kann zur Kündigung führen (Game Over).
 
 ### 1.2. Fahrzeugentwicklung (R&D)
-**Status:** Fortgeschritten
+**Status:** Abgeschlossen
 - **F&E-Projekte:** Spieler initiieren Projekte zur Entwicklung spezifischer Fahrzeugteile.
   - *Parameter:* Jedes Projekt hat definierte Kosten, eine Dauer (in Tagen) und benötigt Ingenieursstunden.
   - *Erfolg & Durchbrüche:* Der Erfolg wird durch die Fähigkeiten des Personals (z.B. Chef-Aerodynamiker) und die Stufe der Infrastruktur (z.B. Windkanal) beeinflusst. Es besteht die Chance auf einen "Durchbruch", der zu einem unerwartet großen Leistungsgewinn führt.
@@ -131,7 +131,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Vorhersage-Genauigkeit:* Die Wettervorhersage hat eine prozentuale Sicherheit, was strategische Risiken schafft.
 
 ### 2.3. Strecken-Charakteristiken
-**Status:** Nicht begonnen
+**Status:** Abgeschlossen
 - **Mechanik:** Jede Strecke im Kalender hat 1-2 definierte Charakteristiken, die die Fahrzeug-Performance und Strategie beeinflussen.
 - **Beispiele:**
   - *Power-Strecke (z.B. Monza):* Motorleistung ist der entscheidende Faktor.
@@ -205,3 +205,30 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 
 ### 5.3. Saison-Archiv
 - **Vergangene Saisons:** Der Spieler kann die detaillierten Endergebnisse (Fahrer- & Konstrukteurswertung) jeder gespielten Saison einsehen.
+
+## 6. Politur & Balancing
+**Status:** Geplant
+
+### 6.1. Wirtschafts-Balancing
+- Feinabstimmung aller Kosten (Teile, Gehälter, Infrastruktur) und Einnahmen (Sponsoren, Preisgelder), um eine herausfordernde, aber faire wirtschaftliche Simulation zu gewährleisten.
+
+### 6.2. KI-Balancing
+- Anpassung der KI-Entscheidungen in Bezug auf F&E, Strategie und Fahrermanagement, um eine glaubwürdige und konkurrenzfähige Gegnerschaft auf allen Schwierigkeitsgraden zu schaffen.
+
+### 6.3. UI/UX-Review
+- Ein kompletter Durchlauf aller Menüs und HUDs, um die Benutzerfreundlichkeit zu verbessern, Tooltips zu vervollständigen und die visuelle Konsistenz sicherzustellen.
+
+### 6.4. Performance-Optimierung
+- Analyse und Optimierung von Ladezeiten und der Performance während der Rennsimulation.
+
+## 7. Post-Launch-Ideen
+**Status:** Konzeptionell
+
+### 7.1. Erweiterungspaket: Neue Rennserien
+- Hinzufügen von komplett neuen Rennserien (z.B. GT World Challenge, WEC) mit eigenen Fahrzeugen, Regeln und Kalendern.
+
+### 7.2. Erweiterungspaket: Historische Szenarien
+- Nachbildung berühmter Saisons oder Momente der Motorsportgeschichte als spielbare Szenarien.
+
+### 7.3. Feature-Update: Eigene Motorenentwicklung
+- Ermögliche es dem Spieler, ein vollwertiger Motorenhersteller zu werden und andere Teams zu beliefern.
