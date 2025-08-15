@@ -22,9 +22,13 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Status:* Nicht begonnen
   - *Mechanik:* Traits können positiv (z.B. "Regenmeister", "Reifenflüsterer") oder negativ (z.B. "Hitzkopf", "Inkonsistent") sein und beeinflussen die Performance unter bestimmten Bedingungen oder die Abnutzung des Materials.
   - *Entdeckung:* Traits werden durch Scouting oder durch das Verhalten des Fahrers im Laufe der Zeit aufgedeckt.
+- **Vorstands-Ziele:** Der Vorstand des Teams gibt dem Spieler Ziele vor.
+  - *Status:* Nicht begonnen
+  - *Mechanik:* Der Vorstand setzt kurz- (1 Jahr), mittel- (3 Jahre) und langfristige (5 Jahre) Ziele in den Bereichen Sport, Finanzen und Management.
+  - *Auswirkungen:* Das Erreichen der Ziele steigert das Vertrauen des Vorstands, was zu mehr Budget und Freiheiten führt. Das Verfehlen senkt das Vertrauen und kann zur Kündigung führen (Game Over).
 
 ### 1.2. Fahrzeugentwicklung (R&D)
-**Status:** In Bearbeitung
+**Status:** Fortgeschritten
 - **F&E-Projekte:** Spieler initiieren Projekte zur Entwicklung spezifischer Fahrzeugteile.
   - *Parameter:* Jedes Projekt hat definierte Kosten, eine Dauer (in Tagen) und benötigt Ingenieursstunden.
   - *Erfolg & Durchbrüche:* Der Erfolg wird durch die Fähigkeiten des Personals (z.B. Chef-Aerodynamiker) und die Stufe der Infrastruktur (z.B. Windkanal) beeinflusst. Es besteht die Chance auf einen "Durchbruch", der zu einem unerwartet großen Leistungsgewinn führt.
@@ -47,7 +51,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Fokus-Optionen:* Aero-Konzept, Mechanischer Grip, Zuverlässigkeit, Allrounder.
 
 ### 1.3. Finanzmanagement
-**Status:** In Bearbeitung
+**Status:** Fortgeschritten
 - **Sponsorenverträge:** Aushandeln von Verträgen mit verschiedenen Sponsoren.
   - *Sponsoren-Typen:* Hauptsponsor (1 pro Saison, hoher Wert, hohe Anforderungen) und Nebensponsoren (mehrere möglich, geringerer Wert).
   - *Vertrags-Struktur:* Fixe Zahlung pro Rennen, Leistungsboni (für Punkte, Podien, Siege) und Saisonziele (z.B. Konstrukteurs-WM Platz 5).
@@ -144,12 +148,17 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Team erstellen:** Starte mit einem komplett neuen Team von Grund auf.
 - **Bestehendes Team übernehmen:** Übernimm die Leitung eines etablierten Teams und führe es zum Erfolg.
 - **Langzeit-Motivation:** Aufstieg durch verschiedene Rennserien.
+- **Szenario-Modus:** Starte das Spiel in einer vordefinierten, herausfordernden Situation (z.B. Team mit Finanzproblemen, Star-Fahrer mit Motivationskrise).
 
 ### 3.2. Multiplayer
 **Status:** Nicht begonnen
 - **Online-Ligen:** Erstelle oder trete Ligen mit Freunden bei und fahre eine komplette Saison.
 - **Head-to-Head:** Fordere andere Spieler zu einzelnen Rennen heraus.
 - **Koop-Karriere:** Zwei Spieler leiten gemeinsam ein Team und teilen sich die Verantwortlichkeiten (z.B. einer für F&E/Finanzen, der andere für das Rennwochenende).
+
+### 3.3. Einstellungen & Schwierigkeit
+**Status:** Nicht begonnen
+- **Benutzerdefinierte Schwierigkeit:** Erlaube dem Spieler, einzelne Parameter wie KI-Stärke, Einnahmen-Multiplikator und F&E-Kosten individuell anzupassen.
 
 ## 4. Sonstiges
 **Status:** In Überarbeitung
@@ -181,3 +190,18 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** Nicht begonnen
 - **Team-Editor:** Werkzeuge zur Gestaltung der Fahrzeuglackierung, des Team-Logos und der Team-Kleidung.
 - **Fahrer-Editor:** Anpassung von Helm-Design und Rennanzug für die eigenen Fahrer.
+
+## 5. Karriere-Statistiken & Ruhmeshalle
+**Status:** Nicht begonnen
+
+### 5.1. Karriere-Übersicht
+- **Spieler-Statistiken:** Detaillierte Auflistung der Erfolge des Spielers (gewonnene Rennen, Titel, gemanagte Teams etc.).
+- **Fahrer-Datenbank:** Jeder Fahrer im Spiel hat eine Karriereseite mit seinen bisherigen Saisonergebnissen, Teams und Erfolgen.
+- **Team-Datenbank:** Jedes Team hat eine historische Übersicht seiner Erfolge und früheren Fahrer.
+
+### 5.2. Ruhmeshalle (Hall of Fame)
+- **Ewige Ranglisten:** Ranglisten für Fahrer und Teams nach Siegen, Pole Positions und Weltmeistertiteln.
+- **Besondere Meilensteine:** Kennzeichnung von besonderen Erfolgen (z.B. "Triple Crown", "Eine ganze Saison ungeschlagen").
+
+### 5.3. Saison-Archiv
+- **Vergangene Saisons:** Der Spieler kann die detaillierten Endergebnisse (Fahrer- & Konstrukteurswertung) jeder gespielten Saison einsehen.
