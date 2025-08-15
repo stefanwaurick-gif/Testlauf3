@@ -31,6 +31,9 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Kapazität & Kosten:* Die Fertigungskapazität ist durch die Fabrikgröße begrenzt. Jedes Teil hat individuelle Produktionskosten.
 - **Reglementänderungen:** Jährliche Änderungen der technischen Regeln zwingen zur Anpassung.
   - *Anpassungsdruck:* Bestimmte Teile könnten für die nächste Saison illegal werden, was eine Neuentwicklung erzwingt.
+- **Regel-Grauzonen & Risiko:** Der Spieler kann riskante, potenziell nicht regelkonforme Teile entwickeln.
+  - *Mechanik:* Diese Teile bieten einen hohen Leistungsschub, bergen aber das Risiko, bei einer technischen Inspektion nach dem Rennen entdeckt zu werden.
+  - *Konsequenzen:* Strafen können von einer Geldstrafe über eine Disqualifikation vom Rennen bis hin zu einem Forschungsverbot für die Komponente reichen.
 
 ### 1.3. Finanzmanagement
 **Status:** In Bearbeitung
@@ -55,6 +58,13 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
     - *Stufe 1:* Standard. *Stufe 2:* +5% Fahrer-XP pro Woche. *Stufe 3:* +10% Fahrer-XP, schaltet vor dem Rennwochenende eine Setup-Empfehlung frei.
   - **Scouting-Abteilung:** Verbessert die Genauigkeit der Berichte über junge Talente.
     - *Stufe 1:* Standard. *Stufe 2:* Deckt "Potenzial"-Rating auf. *Stufe 3:* Deckt verborgene Fahrer-Eigenschaften auf.
+
+### 1.5. Personal-Moral und Beziehungen
+**Status:** Nicht begonnen
+- **Moral-System:** Jeder Mitarbeiter hat einen Moral-Wert (1-100), der seine Leistung beeinflusst.
+  - *Einflussfaktoren:* Teamerfolg, persönliche Gespräche, Gehalt, Gefühl der Wertschätzung. Niedrige Moral kann zu Leistungsabfall oder Kündigungswünschen führen.
+- **Interne Beziehungen:** Bestimmte Personal-Paarungen können positive oder negative Synergien entwickeln.
+  - *Beispiel:* Ein Renningenieur und ein Fahrer, die sich gut verstehen, schalten einen kleinen Setup-Bonus frei. Ein Konflikt zwischen Technischem Direktor und Chef-Aerodynamiker verlangsamt die F&E.
 
 ## 2. Das Rennwochenende
 **Status:** In Bearbeitung
@@ -102,8 +112,40 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** Nicht begonnen
 - **Online-Ligen:** Erstelle oder trete Ligen mit Freunden bei und fahre eine komplette Saison.
 - **Head-to-Head:** Fordere andere Spieler zu einzelnen Rennen heraus.
+- **Koop-Karriere:** Zwei Spieler leiten gemeinsam ein Team und teilen sich die Verantwortlichkeiten (z.B. einer für F&E/Finanzen, der andere für das Rennwochenende).
 
 ## 4. Sonstiges
+
+**Status:** In Überarbeitung
+
+### 4.1. Fahrerakademie
+**Status:** Detailliert
+- **Scouting & Rekrutierung:** Junge Talente (15-18 Jahre) weltweit über das Scouting-Netzwerk finden. Jeder Fahrer hat sichtbare Basis-Skills und verborgenes Potenzial.
+- **Entwicklungsprogramm:** Investition in verschiedene Trainingsprogramme (z.B. Kartsport, Formel 4, Formel 3), um die Skills der Nachwuchsfahrer gezielt zu verbessern.
+- **Vertragsbindung:** Nachwuchsfahrer unterzeichnen Optionsverträge. Der Spieler kann sie zum Testfahrer befördern oder ihnen ein Stammcockpit anbieten, wenn sie bereit sind.
+
+### 4.2. Team-Rivalitäten
+**Status:** Nicht begonnen
+- **Dynamisches System:** Basierend auf der Performance und direkten Duellen auf der Strecke entstehen Rivalitäten mit anderen Teams.
+- **Auswirkungen:** Erhöht die Medienaufmerksamkeit, schafft spezielle Sponsoren-Boni (z.B. "Schlage Team X in den nächsten 3 Rennen") und beeinflusst die Moral.
+
+### 4.3. Dynamische Story-Events
+**Status:** Nicht begonnen
+- **Szenario-basiert:** Zufällige oder getriggerte Ereignisse, die den Spieler vor Entscheidungen stellen.
+  - *Beispiele:* Ein reicher Investor bietet an, das Team zu kaufen; der Hauptsponsor droht mit Rückzug nach einer Pechsträhne; ein wichtiger Ingenieur erhält ein Angebot von einem Konkurrenzteam.
+- **Entscheidungsfreiheit:** Die Wahl des Spielers hat kurz- und langfristige Konsequenzen für Finanzen, Moral und Teamleistung.
+
+### 4.4. Medien & Presse
+**Status:** Detailliert
+- **Interaktive Interviews:** Nach dem Rennen wird der Spieler mit Fragen von Journalisten konfrontiert.
+  - *Antwort-Optionen:* Die Antworten können die Moral der Fahrer (loben/kritisieren), des Personals oder die Beziehung zu Sponsoren und Rivalen beeinflussen.
+- **Presse-Stimmung:** Die Medien entwickeln eine allgemeine Haltung gegenüber dem Team (z.B. "Aufsteiger", "Kriselnd"), die sich auf das Team-Prestige auswirkt.
+
+### 4.5. Customization
+**Status:** Nicht begonnen
+- **Team-Editor:** Werkzeuge zur Gestaltung der Fahrzeuglackierung, des Team-Logos und der Team-Kleidung.
+- **Fahrer-Editor:** Anpassung von Helm-Design und Rennanzug für die eigenen Fahrer.
+=======
 **Status:** In Bearbeitung
 
 ### 4.1. Fahrerakademie
@@ -119,3 +161,4 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 ### 4.3. Customization
 **Status:** Nicht begonnen
 - Gestaltung der Team-Lackierung und Fahrerhelme.
+
