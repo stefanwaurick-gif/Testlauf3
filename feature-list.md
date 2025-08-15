@@ -8,11 +8,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** Nicht begonnen
 
 ### 1.1. Team-Management
-
-**Status:** Nicht begonnen
-=======
 **Status:** In Bearbeitung
-
 - **Schlüsselpersonal:** Einstellen und Verwalten von kritischen Rollen. Jede Person hat Attribute (Skills 1-20, Gehaltsvorstellung, etc.).
   - *Technischer Direktor:* Beeinflusst die gesamte F&E-Richtung.
   - *Chef-Aerodynamiker:* Verantwortlich für Aerodynamik-Projekte.
@@ -24,24 +20,6 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Methoden:* Investition in Mentoring-Programme, Simulatortraining oder externe Kurse zur Steigerung spezifischer Skill-Werte.
 
 ### 1.2. Fahrzeugentwicklung (R&D)
-
-**Status:** Nicht begonnen
-- **F&E-Abteilung:** Entwicklung neuer Teile in den Bereichen Aerodynamik, Chassis, Motor und Getriebe.
-- **Design-Philosophie:** Festlegen einer langfristigen Ausrichtung (z.B. Fokus auf Aerodynamik vs. Motorleistung).
-- **Fertigung:** Produktion von Teilen, Abwägung zwischen Leistung, Haltbarkeit und Kosten.
-- **Reglementänderungen:** Jede Saison gibt es neue technische Vorschriften, an die das Auto angepasst werden muss.
-
-### 1.3. Finanzmanagement
-**Status:** Nicht begonnen
-- **Budgetverwaltung:** Verwalten des Saisonbudgets, Zuweisung von Mitteln für F&E, Produktion und Personal.
-- **Sponsoring:** Vertragsabschlüsse mit Sponsoren, Erfüllung von Zielen für Bonuszahlungen.
-- **Merchandising:** Einnahmen durch Fanartikel.
-
-### 1.4. Infrastruktur
-**Status:** Nicht begonnen
-- **Werkserweiterung:** Ausbau von Fabrik, Windkanal, Simulator und Testeinrichtungen.
-- **Investitionsentscheidungen:** Langfristige Investitionen in die Infrastruktur zur Steigerung der Effizienz.
-=======
 **Status:** In Bearbeitung
 - **F&E-Projekte:** Spieler initiieren Projekte zur Entwicklung spezifischer Fahrzeugteile.
   - *Parameter:* Jedes Projekt hat definierte Kosten, eine Dauer (in Tagen) und benötigt Ingenieursstunden.
@@ -67,10 +45,10 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Laufende Kosten:* Wöchentliche oder monatliche Abrechnung von Gehältern und Instandhaltung.
 
 ### 1.4. Infrastruktur
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 - **Ausbaubare Einrichtungen:** Jede Einrichtung kann in mehreren Stufen ausgebaut werden. Jede Stufe kostet Zeit und Geld, schaltet aber Boni frei.
   - **Fabrik:** Beeinflusst Fertigungsgeschwindigkeit, -kapazität und Haltbarkeit der Teile.
-    - 
+    - *Stufe 1:* Standard. *Stufe 2:* +1 Fertigungs-Slot, +5% Haltbarkeit. *Stufe 3:* +2 Fertigungs-Slots, +10% Haltbarkeit.
   - **Windkanal:** Verbessert die Effektivität der Aerodynamik-Forschung.
     - *Stufe 1:* Standard. *Stufe 2:* +10% Forschungs-Effizienz für Aero. *Stufe 3:* +25% Forschungs-Effizienz, schaltet "intensive Simulation" frei.
   - **Fahrsimulator:** Verbessert die Fähigkeiten der Fahrer und liefert Setup-Daten.
@@ -78,30 +56,47 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - **Scouting-Abteilung:** Verbessert die Genauigkeit der Berichte über junge Talente.
     - *Stufe 1:* Standard. *Stufe 2:* Deckt "Potenzial"-Rating auf. *Stufe 3:* Deckt verborgene Fahrer-Eigenschaften auf.
 
-
 ## 2. Das Rennwochenende
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 
 ### 2.1. Simulation
-**Status:** Nicht begonnen
-- **3D-Rennansicht:** Verfolgen des Rennens in einer ansprechenden 3D-Grafik.
-- **Daten-Dashboard:** Detaillierte Telemetriedaten, Rundenzeiten und Renninformationen in Echtzeit.
+**Status:** In Bearbeitung
+- **Ansichts-Modi:** Verschiedene Perspektiven zur Beobachtung des Rennens.
+  - *TV-Kamera:* Dynamische Kameras entlang der Strecke wie bei einer Fernsehübertragung.
+  - *Onboard-Kamera:* Mitfahren aus der Perspektive eines beliebigen Fahrers.
+  - *2D-Kartenansicht:* Taktische Übersicht aller Fahrzeuge auf der Strecke in Echtzeit.
+- **Daten-Dashboard (HUD):** Anpassbare Widgets mit allen wichtigen Informationen.
+  - *Live-Zeitnahme:* Klassischer Zeitenturm mit Positionen, Fahrernamen, Abständen und Rundenzeiten.
+  - *Zustandsanzeigen (Spieler):* Detaillierte Anzeige für die eigenen Fahrer: Reifenzustand (%), Benzinmenge (in Runden), ERS-Ladung (%), aktuelle Pace/ERS-Modi.
+  - *Wetter-Radar:* Eine Mini-Karte, die herannahenden Regen und dessen Intensität anzeigt.
 
 ### 2.2. Strategie
-**Status:** Nicht begonnen
-- **Setup-Abstimmung:** Fahrzeugabstimmung in den Trainingssitzungen (Freitag & Samstag).
-- **Qualifying-Strategie:** Festlegen von Reifennutzung und Timing.
-- **Rennstrategie:** Planung von Boxenstopps, Reifenwahl, Benzinmenge und Fahrer-Anweisungen (z.B. "Push" oder "Conserve").
-- **Dynamisches Wetter:** Wetterbedingungen können sich ändern und erfordern eine Anpassung der Strategie.
+**Status:** In Bearbeitung
+- **Setup-Abstimmung:** Anpassen des Fahrzeug-Setups während der Trainings.
+  - *Parameter:* Flügel-Einstellung (Aero-Balance), Reifendruck (Grip vs. Verschleiß), Bremsbalance.
+  - *Fahrer-Feedback:* Der Fahrer gibt qualitatives Feedback (z.B. "Übersteuern am Kurveneingang"), das dem Spieler hilft, das Setup zu optimieren.
+- **Boxenstopp-Planung:** Erstellen von Rennstrategien vor dem Rennen.
+  - *Stints:* Festlegen der Runden für Boxenstopps und der zu verwendenden Reifenmischung (Soft, Medium, Hard, Inter, Wet) für jeden Stint.
+  - *Live-Anpassung:* Die Strategie kann während des Rennens als Reaktion auf Ereignisse (z.B. Safety Car) geändert werden.
+- **Anweisungen während des Rennens:** Direkte Befehle an die Fahrer.
+  - *Pace-Management:* `Reifen/Sprit schonen`, `Neutral fahren`, `Attackieren`. Beeinflusst Rundenzeit, Reifen- und Benzinverbrauch.
+  - *ERS-Management:* `Aufladen`, `Neutral`, `Überholen`. Steuert den Einsatz der elektrischen Energie.
+- **Dynamisches Wetter:** Das Wetter spielt eine entscheidende Rolle.
+  - *Vorhersage-Genauigkeit:* Die Wettervorhersage hat eine prozentuale Sicherheit, was strategische Risiken schafft.
 
 ## 3. Spielmodi
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 
 ### 3.1. Karriere-Modus
-**Status:** Nicht begonnen
-- **Team erstellen:** Starte mit einem komplett neuen Team von Grund auf.
-- **Bestehendes Team übernehmen:** Übernimm die Leitung eines etablierten Teams und führe es zum Erfolg.
-- **Langzeit-Motivation:** Aufstieg durch verschiedene Rennserien.
+**Status:** In Bearbeitung
+- **Team erstellen:** Der Spieler gründet sein eigenes Team von Grund auf.
+  - *Anpassung:* Wahl von Teamname, Hauptfarbe und Logo (aus einer vordefinierten Liste).
+  - *Startbedingungen:* Ein fixes Startbudget, alle Einrichtungen auf Stufe 1, ein Basis-Auto und Zugang zu einem Pool von Nachwuchsfahrern und -personal.
+- **Saisonablauf:** Das Spiel schreitet in einem Kalendersystem voran.
+  - *Kalender-Ansicht:* Zeigt eine Abfolge von Rennwochenenden und "HQ-Phasen".
+  - *HQ-Phasen:* Zeit zwischen den Rennen für Management-Tätigkeiten (F&E, Fertigung, Personal, Finanzen, Infrastruktur-Ausbau).
+- **Langzeit-Motivation:** Das ultimative Ziel ist der Gewinn der Weltmeisterschaft.
+  - *Team-Prestige:* Eine neue Kennzahl, die durch Erfolge steigt. Höheres Prestige schaltet bessere Sponsoren und Personal frei und steigert die Moral.
 
 ### 3.2. Multiplayer
 **Status:** Nicht begonnen
@@ -109,8 +104,18 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Head-to-Head:** Fordere andere Spieler zu einzelnen Rennen heraus.
 
 ## 4. Sonstiges
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 
-- **Fahrerakademie:** Aufbau eines Nachwuchsprogramms zur Entwicklung junger Talente.
-- **Medien & Presse:** Interaktion mit den Medien, die sich auf die Moral des Teams und der Fahrer auswirkt.
-- **Customization:** Gestaltung der Team-Lackierung und Fahrerhelme.
+### 4.1. Fahrerakademie
+**Status:** Nicht begonnen
+- **Talente scouten:** Spieler können Scouts beauftragen, eine Liste von jungen Talenten (15-17 Jahre) zu erstellen. Die Genauigkeit der sichtbaren Werte und des Potenzials hängt von der Stufe der Scouting-Abteilung ab.
+- **Entwicklungsfokus:** Jedem Nachwuchsfahrer kann ein Trainingsfokus zugewiesen werden (z.B. "Pace", "Konstanz", "Reifenschonung"), um gezielt Attribute zu verbessern. Die Effektivität wird durch die Simulator-Stufe beeinflusst.
+- **Abschluss und Beförderung:** Mit 18 Jahren verlassen Fahrer die Akademie. Der Spieler hat ein exklusives Zeitfenster, um ihnen einen Vertrag als Stamm- oder Reservefahrer anzubieten. Danach können auch KI-Teams Angebote machen.
+
+### 4.2. Medien & Presse
+**Status:** Nicht begonnen
+- Interaktion mit den Medien, die sich auf die Moral des Teams und der Fahrer auswirkt.
+
+### 4.3. Customization
+**Status:** Nicht begonnen
+- Gestaltung der Team-Lackierung und Fahrerhelme.
