@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace RacingManager.Contracts
 {
@@ -10,6 +11,19 @@ namespace RacingManager.Contracts
         Scout
     }
 
+    public enum PerformanceBonusType
+    {
+        Win,
+        Podium
+    }
+
+    [Serializable]
+    public class PerformanceBonus
+    {
+        public PerformanceBonusType Type;
+        public float Amount;
+    }
+
     [Serializable]
     public class Contract
     {
@@ -17,6 +31,7 @@ namespace RacingManager.Contracts
         public DateTime EndDate;
         public float Salary;
         public TeamRole Role;
-        public string PerformanceBonuses; // Placeholder as per instructions
+        public float BuyoutClause;
+        public List<PerformanceBonus> PerformanceBonuses;
     }
 }
