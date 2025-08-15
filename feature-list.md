@@ -8,7 +8,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** Nicht begonnen
 
 ### 1.1. Team-Management
-**Status:** In Bearbeitung
+**Status:** Abgeschlossen
 - **Schlüsselpersonal:** Einstellen und Verwalten von kritischen Rollen. Jede Person hat Attribute (Skills 1-20, Gehaltsvorstellung, etc.).
   - *Technischer Direktor:* Beeinflusst die gesamte F&E-Richtung.
   - *Chef-Aerodynamiker:* Verantwortlich für Aerodynamik-Projekte.
@@ -144,7 +144,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** In Bearbeitung
 
 ### 3.1. Karriere-Modus
-**Status:** In Bearbeitung
+**Status:** Abgeschlossen
 - **Team erstellen:** Starte mit einem komplett neuen Team von Grund auf.
 - **Bestehendes Team übernehmen:** Übernimm die Leitung eines etablierten Teams und führe es zum Erfolg.
 - **Langzeit-Motivation:** Aufstieg durch verschiedene Rennserien.
@@ -192,7 +192,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Fahrer-Editor:** Anpassung von Helm-Design und Rennanzug für die eigenen Fahrer.
 
 ## 5. Karriere-Statistiken & Ruhmeshalle
-**Status:** Nicht begonnen
+**Status:** Abgeschlossen
 
 ### 5.1. Karriere-Übersicht
 - **Spieler-Statistiken:** Detaillierte Auflistung der Erfolge des Spielers (gewonnene Rennen, Titel, gemanagte Teams etc.).
