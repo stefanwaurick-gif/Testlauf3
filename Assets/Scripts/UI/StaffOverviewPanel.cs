@@ -14,8 +14,11 @@ public class StaffOverviewPanel : MonoBehaviour
     private struct StaffTestData
     {
         public string Name;
-        public string Role;
+        public StaffRole Role;
         public string TopSkill;
+        public float Morale;
+        public string MoraleFactors;
+        public List<Trait> Traits;
     }
 
     // Start is called before the first frame update
@@ -36,9 +39,11 @@ public class StaffOverviewPanel : MonoBehaviour
         // Create a list of test data
         List<StaffTestData> testData = new List<StaffTestData>
         {
-            new StaffTestData { Name = "Jane Doe", Role = "Technischer Direktor", TopSkill = "Aerodynamik (18)" },
-            new StaffTestData { Name = "John Smith", Role = "Chef-Aerodynamiker", TopSkill = "CFD-Analyse (19)" },
-            new StaffTestData { Name = "Peter Jones", Role = "Renningenieur", TopSkill = "Strategie (17)" }
+            new StaffTestData { Name = "Max Verstappen", Role = StaffRole.Fahrer, TopSkill = "Aggressivität (20)", Morale = 88f, MoraleFactors = "+ Top-Fahrer-Status",
+                Traits = new List<Trait> { new Trait { Name = "Regenmeister", Description = "Fährt bei Nässe 5% schneller." }, new Trait { Name = "Reifenflüsterer", Description = "Reduziert Reifenverschleiß um 10%." } } },
+            new StaffTestData { Name = "Jane Doe", Role = StaffRole.TechnischerDirektor, TopSkill = "Aerodynamik (18)", Morale = 92f, MoraleFactors = "+ Gutes Gehalt\n+ Kürzlicher Rennsieg", Traits = null },
+            new StaffTestData { Name = "John Smith", Role = StaffRole.ChefAerodynamiker, TopSkill = "CFD-Analyse (19)", Morale = 65f, MoraleFactors = "+ Gutes Gehalt\n- Hohe Arbeitsbelastung", Traits = null },
+            new StaffTestData { Name = "Peter Jones", Role = StaffRole.Renningenieur, TopSkill = "Strategie (17)", Morale = 40f, MoraleFactors = "- Gehalt unterdurchschnittlich\n- Schlechtes letztes Rennergebnis", Traits = null }
         };
 
         // Instantiate a prefab for each staff member
@@ -51,7 +56,7 @@ public class StaffOverviewPanel : MonoBehaviour
 
                 if (rowUI != null)
                 {
-                    rowUI.SetStaffData(staffMember.Name, staffMember.Role, staffMember.TopSkill);
+                    rowUI.SetStaffData(staffMember.Name, staffMember.Role, staffMember.TopSkill, staffMember.Morale, staffMember.MoraleFactors, staffMember.Traits);
                 }
                 else
                 {
