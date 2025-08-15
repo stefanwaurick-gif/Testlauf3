@@ -7,6 +7,5 @@ public enum StatType
     Drag,           // Affects top speed (air resistance)
     Downforce,      // Affects grip (not used in simple physics, but good for future)
     Mass,           // Affects acceleration (F=ma)
-    Friction,       // Affects rolling resistance
-    FuelConsumptionRate // Affects how quickly fuel is used
+    Friction        // Affects rolling resistance
 }

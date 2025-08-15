@@ -24,19 +24,11 @@ public class CarPhysics : MonoBehaviour
     [Tooltip("The base mass of the car in kilograms, before part modifiers.")]
     public float baseMass = 1500f;
 
-    [Header("Fuel")]
-    [Tooltip("The car's fuel tank capacity in liters.")]
-    public float fuelTankCapacity = 110f; // F1 cars have ~110kg of fuel, roughly 145L. Let's use Liters.
-
-    [Tooltip("The base rate of fuel consumption in liters per second at full throttle.")]
-    public float baseFuelConsumptionRate = 0.05f;
-
     // Final, calculated stats after applying part modifiers
     private float finalEnginePower;
     private float finalDragCoefficient;
     private float finalFrictionConstant;
     private float finalMass;
-    private float finalFuelConsumptionRate;
 
     [Header("Real-time Data")]
     [Tooltip("The current forward speed of the car in meters per second.")]
@@ -47,17 +39,11 @@ public class CarPhysics : MonoBehaviour
     [SerializeField]
     private float position = 0f;
 
-    [Tooltip("The current amount of fuel in the tank, in liters.")]
-    [SerializeField]
-    private float currentFuel;
-
     // Internal physics state
     private float currentAcceleration = 0f;
 
     void Awake()
     {
-        // Initialize fuel tank to full
-        currentFuel = fuelTankCapacity;
         CalculatePerformanceFromParts();
     }
 
@@ -71,7 +57,6 @@ public class CarPhysics : MonoBehaviour
         finalDragCoefficient = baseDragCoefficient;
         finalFrictionConstant = baseFrictionConstant;
         finalMass = baseMass;
-        finalFuelConsumptionRate = baseFuelConsumptionRate;
 
         if (equippedParts == null) return;
 
@@ -96,9 +81,6 @@ public class CarPhysics : MonoBehaviour
                     case StatType.Mass:
                         finalMass += modifier.Value;
                         break;
-                    case StatType.FuelConsumptionRate:
-                        finalFuelConsumptionRate += modifier.Value;
-                        break;
                     // Downforce is not used in this simple model yet
                     case StatType.Downforce:
                         break;
@@ -113,23 +95,8 @@ public class CarPhysics : MonoBehaviour
     /// </summary>
     void Update()
     {
-        // --- Fuel Consumption ---
-        bool hasFuel = currentFuel > 0;
-        float engineForce = hasFuel ? finalEnginePower : 0f;
-
-        if (hasFuel)
-        {
-            // For simplicity, assume consumption is constant at full throttle.
-            // A more complex model could tie consumption to engineForce output.
-            currentFuel -= finalFuelConsumptionRate * Time.deltaTime;
-            if (currentFuel < 0)
-            {
-                currentFuel = 0;
-            }
-        }
-
-        // --- Physics Calculation ---
         // 1. Calculate Forces using the final stats calculated from parts
+        float engineForce = finalEnginePower;
         float dragForce = finalDragCoefficient * currentSpeed * currentSpeed; // Drag = C * v^2
         float frictionForce = finalFrictionConstant;
 
