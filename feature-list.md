@@ -88,7 +88,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** In Bearbeitung
 
 ### 3.1. Karriere-Modus
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 - **Team erstellen:** Der Spieler gründet sein eigenes Team von Grund auf.
   - *Anpassung:* Wahl von Teamname, Hauptfarbe und Logo (aus einer vordefinierten Liste).
   - *Startbedingungen:* Ein fixes Startbudget, alle Einrichtungen auf Stufe 1, ein Basis-Auto und Zugang zu einem Pool von Nachwuchsfahrern und -personal.
@@ -104,8 +104,18 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Head-to-Head:** Fordere andere Spieler zu einzelnen Rennen heraus.
 
 ## 4. Sonstiges
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 
-- **Fahrerakademie:** Aufbau eines Nachwuchsprogramms zur Entwicklung junger Talente.
-- **Medien & Presse:** Interaktion mit den Medien, die sich auf die Moral des Teams und der Fahrer auswirkt.
-- **Customization:** Gestaltung der Team-Lackierung und Fahrerhelme.
+### 4.1. Fahrerakademie
+**Status:** Nicht begonnen
+- **Talente scouten:** Spieler können Scouts beauftragen, eine Liste von jungen Talenten (15-17 Jahre) zu erstellen. Die Genauigkeit der sichtbaren Werte und des Potenzials hängt von der Stufe der Scouting-Abteilung ab.
+- **Entwicklungsfokus:** Jedem Nachwuchsfahrer kann ein Trainingsfokus zugewiesen werden (z.B. "Pace", "Konstanz", "Reifenschonung"), um gezielt Attribute zu verbessern. Die Effektivität wird durch die Simulator-Stufe beeinflusst.
+- **Abschluss und Beförderung:** Mit 18 Jahren verlassen Fahrer die Akademie. Der Spieler hat ein exklusives Zeitfenster, um ihnen einen Vertrag als Stamm- oder Reservefahrer anzubieten. Danach können auch KI-Teams Angebote machen.
+
+### 4.2. Medien & Presse
+**Status:** Nicht begonnen
+- Interaktion mit den Medien, die sich auf die Moral des Teams und der Fahrer auswirkt.
+
+### 4.3. Customization
+**Status:** Nicht begonnen
+- Gestaltung der Team-Lackierung und Fahrerhelme.
