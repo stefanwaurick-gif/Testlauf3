@@ -70,7 +70,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** In Bearbeitung
 
 ### 2.1. Simulation
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 - **Ansichts-Modi:** Verschiedene Perspektiven zur Beobachtung des Rennens.
   - *TV-Kamera:* Dynamische Kameras entlang der Strecke wie bei einer Fernsehübertragung.
   - *Onboard-Kamera:* Mitfahren aus der Perspektive eines beliebigen Fahrers.
@@ -95,13 +95,18 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
   - *Vorhersage-Genauigkeit:* Die Wettervorhersage hat eine prozentuale Sicherheit, was strategische Risiken schafft.
 
 ## 3. Spielmodi
-**Status:** Nicht begonnen
+**Status:** In Bearbeitung
 
 ### 3.1. Karriere-Modus
-**Status:** Nicht begonnen
-- **Team erstellen:** Starte mit einem komplett neuen Team von Grund auf.
-- **Bestehendes Team übernehmen:** Übernimm die Leitung eines etablierten Teams und führe es zum Erfolg.
-- **Langzeit-Motivation:** Aufstieg durch verschiedene Rennserien.
+**Status:** In Bearbeitung
+- **Team erstellen:** Der Spieler gründet sein eigenes Team von Grund auf.
+  - *Anpassung:* Wahl von Teamname, Hauptfarbe und Logo (aus einer vordefinierten Liste).
+  - *Startbedingungen:* Ein fixes Startbudget, alle Einrichtungen auf Stufe 1, ein Basis-Auto und Zugang zu einem Pool von Nachwuchsfahrern und -personal.
+- **Saisonablauf:** Das Spiel schreitet in einem Kalendersystem voran.
+  - *Kalender-Ansicht:* Zeigt eine Abfolge von Rennwochenenden und "HQ-Phasen".
+  - *HQ-Phasen:* Zeit zwischen den Rennen für Management-Tätigkeiten (F&E, Fertigung, Personal, Finanzen, Infrastruktur-Ausbau).
+- **Langzeit-Motivation:** Das ultimative Ziel ist der Gewinn der Weltmeisterschaft.
+  - *Team-Prestige:* Eine neue Kennzahl, die durch Erfolge steigt. Höheres Prestige schaltet bessere Sponsoren und Personal frei und steigert die Moral.
 
 ### 3.2. Multiplayer
 **Status:** Nicht begonnen
@@ -110,6 +115,7 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 - **Koop-Karriere:** Zwei Spieler leiten gemeinsam ein Team und teilen sich die Verantwortlichkeiten (z.B. einer für F&E/Finanzen, der andere für das Rennwochenende).
 
 ## 4. Sonstiges
+
 **Status:** In Überarbeitung
 
 ### 4.1. Fahrerakademie
@@ -139,3 +145,20 @@ Dieses Dokument beschreibt die geplanten Features für das Spiel "Racing Manager
 **Status:** Nicht begonnen
 - **Team-Editor:** Werkzeuge zur Gestaltung der Fahrzeuglackierung, des Team-Logos und der Team-Kleidung.
 - **Fahrer-Editor:** Anpassung von Helm-Design und Rennanzug für die eigenen Fahrer.
+=======
+**Status:** In Bearbeitung
+
+### 4.1. Fahrerakademie
+**Status:** Nicht begonnen
+- **Talente scouten:** Spieler können Scouts beauftragen, eine Liste von jungen Talenten (15-17 Jahre) zu erstellen. Die Genauigkeit der sichtbaren Werte und des Potenzials hängt von der Stufe der Scouting-Abteilung ab.
+- **Entwicklungsfokus:** Jedem Nachwuchsfahrer kann ein Trainingsfokus zugewiesen werden (z.B. "Pace", "Konstanz", "Reifenschonung"), um gezielt Attribute zu verbessern. Die Effektivität wird durch die Simulator-Stufe beeinflusst.
+- **Abschluss und Beförderung:** Mit 18 Jahren verlassen Fahrer die Akademie. Der Spieler hat ein exklusives Zeitfenster, um ihnen einen Vertrag als Stamm- oder Reservefahrer anzubieten. Danach können auch KI-Teams Angebote machen.
+
+### 4.2. Medien & Presse
+**Status:** Nicht begonnen
+- Interaktion mit den Medien, die sich auf die Moral des Teams und der Fahrer auswirkt.
+
+### 4.3. Customization
+**Status:** Nicht begonnen
+- Gestaltung der Team-Lackierung und Fahrerhelme.
+
