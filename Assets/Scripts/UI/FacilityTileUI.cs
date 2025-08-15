@@ -34,4 +34,42 @@ public class FacilityTileUI : MonoBehaviour
         // Here you would typically open a confirmation dialog and then
         // interact with a game manager to start the upgrade process.
     }
+
+    void Awake()
+    {
+        ApplyTheme();
+        AddTooltips();
+    }
+
+    private void ApplyTheme()
+    {
+        if (UIStyleManager.ActiveTheme == null)
+        {
+            Debug.LogWarning("No active UI Theme found.");
+            return;
+        }
+
+        // Apply styles
+        facilityNameText.fontSize = UIStyleManager.ActiveTheme.headerFontSize;
+        facilityNameText.color = UIStyleManager.ActiveTheme.textColor;
+
+        levelText.fontSize = UIStyleManager.ActiveTheme.bodyFontSize;
+        levelText.color = UIStyleManager.ActiveTheme.textColor;
+        bonusText.fontSize = UIStyleManager.ActiveTheme.bodyFontSize;
+        bonusText.color = UIStyleManager.ActiveTheme.textColor;
+        upgradeCostText.fontSize = UIStyleManager.ActiveTheme.bodyFontSize;
+        upgradeCostText.color = UIStyleManager.ActiveTheme.textColor;
+        upgradeDurationText.fontSize = UIStyleManager.ActiveTheme.bodyFontSize;
+        upgradeDurationText.color = UIStyleManager.ActiveTheme.textColor;
+
+        upgradeButton.GetComponent<Image>().color = UIStyleManager.ActiveTheme.primaryButtonColor;
+        upgradeButton.GetComponentInChildren<Text>().fontSize = UIStyleManager.ActiveTheme.buttonFontSize;
+    }
+
+    private void AddTooltips()
+    {
+        // Add a tooltip trigger to the upgrade button
+        TooltipTrigger trigger = upgradeButton.gameObject.AddComponent<TooltipTrigger>();
+        trigger.tooltipText = "Investiere Geld und Zeit, um diese Einrichtung zu verbessern und bessere Boni zu erhalten.";
+    }
 }

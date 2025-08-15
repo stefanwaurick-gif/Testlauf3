@@ -45,6 +45,22 @@ public class EventPopupUI : MonoBehaviour
         ShowEvent(testEvent);
     }
 
+    void Awake()
+    {
+        ApplyTheme();
+    }
+
+    private void ApplyTheme()
+    {
+        if (UIStyleManager.ActiveTheme == null) return;
+
+        popupPanel.GetComponent<Image>().color = UIStyleManager.ActiveTheme.panelBackgroundColor;
+        titleText.fontSize = UIStyleManager.ActiveTheme.headerFontSize;
+        titleText.color = UIStyleManager.ActiveTheme.textColor;
+        descriptionText.fontSize = UIStyleManager.ActiveTheme.bodyFontSize;
+        descriptionText.color = UIStyleManager.ActiveTheme.textColor;
+    }
+
     public void ShowEvent(EventData eventData)
     {
         // Show the panel
@@ -65,7 +81,15 @@ public class EventPopupUI : MonoBehaviour
         {
             GameObject buttonInstance = Instantiate(choiceButtonPrefab, choicesParent);
             // Set button text
-            buttonInstance.GetComponentInChildren<Text>().text = eventData.Choices[i];
+            Text buttonText = buttonInstance.GetComponentInChildren<Text>();
+            buttonText.text = eventData.Choices[i];
+
+            // Apply theme to the new button
+            if (UIStyleManager.ActiveTheme != null)
+            {
+                buttonInstance.GetComponent<Image>().color = UIStyleManager.ActiveTheme.secondaryButtonColor;
+                buttonText.fontSize = UIStyleManager.ActiveTheme.buttonFontSize;
+            }
 
             int choiceIndex = i; // Avoid closure issues
             buttonInstance.GetComponent<Button>().onClick.AddListener(() => OnChoiceMade(choiceIndex));

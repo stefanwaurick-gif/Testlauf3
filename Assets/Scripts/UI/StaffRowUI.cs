@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI; // Required for UI elements like Text
+using System.Collections.Generic;
+using System.Text;
 
 // This script would be attached to a prefab that represents a single row
 // in the staff list. It holds references to the UI elements in that row.
@@ -14,12 +16,15 @@ public class StaffRowUI : MonoBehaviour
     [SerializeField] private Image moraleIndicator;
     [SerializeField] private Button moraleDetailsButton; // Button to show tooltip info
 
+    [Header("Driver Traits")]
+    [SerializeField] private Button viewTraitsButton;
+
     // This method would be called by the StaffOverviewPanel to populate
     // this row with a specific staff member's data.
-    public void SetStaffData(string staffName, string staffRole, string topSkill, float morale, string moraleFactors)
+    public void SetStaffData(string staffName, StaffRole staffRole, string topSkill, float morale, string moraleFactors, List<Trait> traits)
     {
         if (nameText != null) nameText.text = staffName;
-        if (roleText != null) roleText.text = staffRole;
+        if (roleText != null) roleText.text = staffRole.ToString();
         if (topSkillText != null) topSkillText.text = topSkill;
 
         // Update morale visual
@@ -30,6 +35,21 @@ public class StaffRowUI : MonoBehaviour
         {
             moraleDetailsButton.onClick.RemoveAllListeners(); // Clear previous listeners
             moraleDetailsButton.onClick.AddListener(() => ShowMoraleTooltip(moraleFactors));
+        }
+
+        // Handle Driver-specific Traits button
+        if (viewTraitsButton != null)
+        {
+            if (staffRole == StaffRole.Fahrer && traits != null && traits.Count > 0)
+            {
+                viewTraitsButton.gameObject.SetActive(true);
+                viewTraitsButton.onClick.RemoveAllListeners();
+                viewTraitsButton.onClick.AddListener(() => OnViewTraitsClicked(traits));
+            }
+            else
+            {
+                viewTraitsButton.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -61,5 +81,17 @@ public class StaffRowUI : MonoBehaviour
         // In a real UI, this would show a tooltip panel.
         // For this prototype, we just log the information.
         Debug.Log($"Morale Factors for {nameText.text}:\n{factors}");
+    }
+
+    private void OnViewTraitsClicked(List<Trait> traits)
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine($"Traits for {nameText.text}:");
+        foreach (var trait in traits)
+        {
+            sb.AppendLine($"- {trait.Name}: {trait.Description}");
+        }
+        // This would be displayed in a detail panel/tooltip in a real implementation.
+        Debug.Log(sb.ToString());
     }
 }
