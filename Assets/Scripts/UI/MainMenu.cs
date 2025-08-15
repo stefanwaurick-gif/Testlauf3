@@ -18,10 +18,10 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         // Here you would add listeners to the buttons, for example:
-        startCareerButton.onClick.AddListener(StartCareer);
-        loadGameButton.onClick.AddListener(LoadGame);
-        settingsButton.onClick.AddListener(OpenSettings);
-        exitButton.onClick.AddListener(ExitGame);
+        // startCareerButton.onClick.AddListener(StartCareer);
+        // loadGameButton.onClick.AddListener(LoadGame);
+        // settingsButton.onClick.AddListener(OpenSettings);
+        // exitButton.onClick.AddListener(ExitGame);
 
         Debug.Log("MainMenu script started. UI elements should be linked.");
     }
