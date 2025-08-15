@@ -16,6 +16,8 @@ public class StaffOverviewPanel : MonoBehaviour
         public string Name;
         public string Role;
         public string TopSkill;
+        public float Morale;
+        public string MoraleFactors;
     }
 
     // Start is called before the first frame update
@@ -36,9 +38,9 @@ public class StaffOverviewPanel : MonoBehaviour
         // Create a list of test data
         List<StaffTestData> testData = new List<StaffTestData>
         {
-            new StaffTestData { Name = "Jane Doe", Role = "Technischer Direktor", TopSkill = "Aerodynamik (18)" },
-            new StaffTestData { Name = "John Smith", Role = "Chef-Aerodynamiker", TopSkill = "CFD-Analyse (19)" },
-            new StaffTestData { Name = "Peter Jones", Role = "Renningenieur", TopSkill = "Strategie (17)" }
+            new StaffTestData { Name = "Jane Doe", Role = "Technischer Direktor", TopSkill = "Aerodynamik (18)", Morale = 92f, MoraleFactors = "+ Gutes Gehalt\n+ Kürzlicher Rennsieg" },
+            new StaffTestData { Name = "John Smith", Role = "Chef-Aerodynamiker", TopSkill = "CFD-Analyse (19)", Morale = 65f, MoraleFactors = "+ Gutes Gehalt\n- Hohe Arbeitsbelastung" },
+            new StaffTestData { Name = "Peter Jones", Role = "Renningenieur", TopSkill = "Strategie (17)", Morale = 40f, MoraleFactors = "- Gehalt unterdurchschnittlich\n- Schlechtes letztes Rennergebnis" }
         };
 
         // Instantiate a prefab for each staff member
@@ -51,7 +53,7 @@ public class StaffOverviewPanel : MonoBehaviour
 
                 if (rowUI != null)
                 {
-                    rowUI.SetStaffData(staffMember.Name, staffMember.Role, staffMember.TopSkill);
+                    rowUI.SetStaffData(staffMember.Name, staffMember.Role, staffMember.TopSkill, staffMember.Morale, staffMember.MoraleFactors);
                 }
                 else
                 {
