@@ -24,6 +24,8 @@ Dieses Dokument dient der Zuweisung und Nachverfolgung von Entwicklungsaufgaben.
 | **G-008** | In Bearbeitung | 1.4. Infrastruktur | Datenmodell für Einrichtungen | **Jonas** | Erstelle eine `Facility` Basisklasse und abgeleitete Klassen (`WindTunnel`, `Factory`). Jede Einrichtung soll ein `Level` (int) haben und eine `Upgrade()` Methode, die Kosten/Zeit für das nächste Level berechnet. |
 | **G-009** | To Do | 1.4. Infrastruktur | Boni der Einrichtungen bereitstellen | **Jonas** | Erstelle einen `FacilityManager`, der die Einrichtungen des Teams verwaltet. Implementiere öffentliche Funktionen wie `GetAeroResearchBonus()`, die die Boni basierend auf den Leveln der Einrichtungen zurückgeben. |
 | **U-005** | To Do | 1.4. Infrastruktur | UI-Screen für Infrastruktur | **Leo** | Entwirf das 'Infrastruktur'-UI-Panel. Zeige die Einrichtungen als Kacheln an. Jede Kachel zeigt das aktuelle Level, die Boni und einen 'Ausbauen'-Button mit den Kosten und der Dauer für das nächste Level. |
+
+=======
 | **P-003** | In Bearbeitung | 2.2. Strategie | Verbrauchsmodell für Reifen/Benzin | **Sofia** | Erweitere die `CarPhysics` Klasse. Füge `TireWear` (float[4]) und `FuelLevel` hinzu. Implementiere eine Methode, die den Verbrauch pro Runde basierend auf einem `PaceMode` (Enum) anpasst. |
 | **G-010** | To Do | 2.2. Strategie | Datenmodell für Rennstrategie | **Jonas** | Erstelle eine `RaceStrategy` Klasse. Sie soll eine Liste von `PitStop` (Struct mit `LapNumber`, `TireCompound` Enum) und die aktuellen `PaceMode` und `ERSMode` (Enums) des Fahrers enthalten. |
 | **U-006** | To Do | 2.2. Strategie | UI-Screen für Rennstrategie-Planung | **Leo** | Entwirf das 'Strategie'-UI-Panel. Zeige eine Runden-Zeitleiste, auf der der Spieler Boxenstopps platzieren und Reifenmischungen für die Stints auswählen kann. |
@@ -37,3 +39,4 @@ Dieses Dokument dient der Zuweisung und Nachverfolgung von Entwicklungsaufgaben.
 | **G-012** | To Do | 4.1. Fahrerakademie | Datenmodell für Nachwuchsfahrer | **Jonas** | Erstelle eine `JuniorDriverProfile` Klasse mit `Age`, `Potential` (Enum A-F) und teils verdeckten Skills. Implementiere eine `AgeUp()` Funktion, die monatlich das Alter erhöht und Skills verbessert. |
 | **U-009** | To Do | 4.1. Fahrerakademie | UI-Screen für Fahrerakademie | **Leo** | Erstelle ein UI-Panel 'Fahrerakademie'. Es soll eine Liste der Nachwuchsfahrer mit Name, Alter, Potenzial und einem einstellbaren Trainings-Fokus (Dropdown) anzeigen. |
 | **A-003** | To Do | 4.1. Fahrerakademie | KI-Logik für Abwerbung von Talenten | **Maria** | Implementiere eine jährliche Logik, bei der KI-Teams versuchen, die besten Absolventen von Fahrerakademien (inkl. der des Spielers) abzuwerben, basierend auf Team-Prestige. |
+
