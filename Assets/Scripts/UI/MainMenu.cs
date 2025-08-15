@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     [Header("UI Buttons")]
     [SerializeField] private Button startCareerButton;
     [SerializeField] private Button loadGameButton;
+    [SerializeField] private Button saveGameButton; // Added for testing
     [SerializeField] private Button settingsButton;
     [SerializeField] private Button exitButton;
 
@@ -20,6 +21,7 @@ public class MainMenu : MonoBehaviour
         // Here you would add listeners to the buttons, for example:
         startCareerButton.onClick.AddListener(StartCareer);
         loadGameButton.onClick.AddListener(LoadGame);
+        saveGameButton.onClick.AddListener(SaveGame); // Added for testing
         settingsButton.onClick.AddListener(OpenSettings);
         exitButton.onClick.AddListener(ExitGame);
 
@@ -34,10 +36,25 @@ public class MainMenu : MonoBehaviour
         // SceneManager.LoadScene("CareerModeScene"); // Example of what would go here
     }
 
+    private void SaveGame()
+    {
+        Debug.Log("Save Game button clicked!");
+        GameState state = new GameState
+        {
+            TeamName = "My Racing Team",
+            Budget = 1000000f
+        };
+        SaveManager.Instance.SaveGameState(state);
+    }
+
     private void LoadGame()
     {
         Debug.Log("Load Game button clicked!");
-        // Code to load a saved game state would go here.
+        GameState state = SaveManager.Instance.LoadGameState();
+        if (state != null)
+        {
+            Debug.Log($"Loaded Team: {state.TeamName}, Budget: {state.Budget}");
+        }
     }
 
     private void OpenSettings()
